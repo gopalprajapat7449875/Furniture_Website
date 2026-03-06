@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
+
+.slick-dots li button{
+    font-size: 30px;
+    color: rgb(6, 206, 32);
+    opacity: 1;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Active dot */
+.slick-dots li.slick-active button:before {
+    color: red;
+    /* yaha apna color daal sakte ho */
+}
+
+.slick-dots {
+    bottom: 20px;
+    display: flex !important;
+    justify-content: center;
+}
