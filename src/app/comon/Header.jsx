@@ -107,7 +107,7 @@ export default function Header() {
                 </Link>
 
                 <li className='text-neutral-500 py-5 hover:cursor-pointer duration-900 relative group hover:  hover:text-yellow-600 flex items-center gap-2'>living  <FaAngleDown />
-                  <div className={`bg-white w-140   text-black origin-top absolute -left-10  top-[58px] -skew-x-15 rotate-x-90 duration-600  group-hover:rotate-x-0 group-hover:skew-x-0 `}>
+                  <div className={`bg-white w-140   text-black origin-top absolute z-9 -left-10  top-[58px] -skew-x-15 rotate-x-90 duration-600  group-hover:rotate-x-0 group-hover:skew-x-0 `}>
                     <div className='grid grid-cols-3 '>
 
                       <div className='py-2 px-5 text-left leading-14   '>
@@ -142,7 +142,7 @@ export default function Header() {
                   </div>
                 </li>
                 <li className='text-neutral-500 py-5 hover:cursor-pointer duration-250  hover:text-yellow-600 flex items-center gap-2 relative group hover:'> sofa  <FaAngleDown />
-                  <div className='bg-white w-140    text-black origin-top absolute -left-10  top-[58px] -skew-x-15 rotate-x-90 duration-600 group-hover:rotate-x-0 group-hover:skew-x-0'>
+                  <div className='bg-white w-140    text-black origin-top absolute z-9 -left-10  top-[58px] -skew-x-15 rotate-x-90 duration-600 group-hover:rotate-x-0 group-hover:skew-x-0'>
                     <div className='grid grid-cols-3 '>
 
                       <div className='py-2 px-5 text-left leading-14   '>
@@ -177,7 +177,7 @@ export default function Header() {
                   </div>
                 </li>
                 <li className='  hover:text-yellow-600 py-5 hover:cursor-pointer duration-250 flex items-center gap-2 relative group hover:'>pages  <FaAngleDown />
-                  <div className='bg-white  w-50 text-black origin-top absolute -left-10  top-[58px] -skew-x-15 rotate-x-90 duration-600 group-hover:rotate-x-0 group-hover:skew-x-0'>
+                  <div className='bg-white  w-50 text-black origin-top absolute z-9 -left-10  top-[58px] -skew-x-15 rotate-x-90 duration-600 group-hover:rotate-x-0 group-hover:skew-x-0'>
 
                     <div className='py-3 px-5 text-left    '>
 

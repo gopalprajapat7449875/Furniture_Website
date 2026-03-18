@@ -33,7 +33,7 @@ export default function CheckoutForm() {
               />
             </div>
 
-            <div className="flex justify-between items-center pt-2">
+            <div className="flex justify-between items-center  pt-2">
               <span className="text-sm text-yellow-700 cursor-pointer">
                 Forget your password?
               </span>
@@ -50,6 +50,26 @@ export default function CheckoutForm() {
           <h2 className="text-3xl font-serif mb-6">Register</h2>
 
           <div className="space-y-4">
+             <div>
+              <label className="block mb-2 text-sm font-medium">
+               Name *
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Name"
+                className="w-full  border-1 border-neutral-200  rounded px-4 py-2 outline-none focus:ring-2 focus:ring-yellow-600"
+              />
+            </div>
+             <div>
+              <label className="block mb-2 text-sm font-medium">
+                Phone Number *
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Phone Number"
+                className="w-full  border-1 border-neutral-200  rounded px-4 py-2 outline-none focus:ring-2 focus:ring-yellow-600"
+              />
+            </div>
             <div>
               <label className="block mb-2 text-sm font-medium">
                 Email address *
