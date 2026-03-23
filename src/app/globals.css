@@ -10,17 +10,47 @@
 
   
 .slick-dots li button:before {
-  font-size: 12px;
-  color: rgb(194, 186, 186);
+  font-size: 14px !important ;
+  color: rgb(254, 252, 252);
   transition: 0.3s;
 }
 
 .slick-dots li:hover button:before {
-  color: rgb(255, 123, 0);
+  color: rgb(245, 148, 21);
   transform: scale(1.1);
 }
 
 
 .slick-dots{
-    bottom: 20px !important ;
+    bottom: 25px !important ;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-in-out;
 }

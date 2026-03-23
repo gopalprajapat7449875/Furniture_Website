@@ -6,11 +6,11 @@ export default function Footer() {
     <div>
       <div className='max-w-[1200px] py-15  border-b border-neutral-200  mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
 
-        <div className=' flex flex-col ps-4'>
+        <div className=' flex flex-col pl-4'>
           <h5 className='text-xl font-semibold font-serif '>
             Contact Us
           </h5>
-          <p className='text-[13px]  text-neutral-500 py-2'>Address: Claritas est etiam processus dynamicus</p>
+          <p className='text-[13px]  text-neutral-500  py-2'>Address: Claritas est etiam processus dynamicus</p>
           <p className='text-[13px]  text-neutral-500 py-2'  >Phone: <a className='hover:text-yellow-600 cursor-pointer' href="tel:+919876543210">+919876543210</a> </p>
           <p className='text-[13px]  text-neutral-500 py-2'>Email: furnitureinfo@gmail.com</p>
           <div className='flex items-center gap-2 py-3'>
@@ -49,7 +49,7 @@ export default function Footer() {
 
         </div>
 
-        <div className='grid grid-cols-2 gap-2'>
+        <div className='grid grid-cols-2 ps-3 sm:ps-0 gap-2'>
 
           <div>
             <h5 className='text-xl pb-2 font-semibold font-serif '>
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className='ps-3 sm:ps-0'>
           <h5 className='text-xl  pb-5 font-semibold font-serif '>Top Rated Products</h5>
           <div className='grid grid-cols-4 border-b border-neutral-200 pb-2 '>
             <div className='col-span-1  '>
@@ -104,7 +104,7 @@ export default function Footer() {
 
       </div>
       <div className='max-w-[1200px] py-3   border-b border-neutral-200 flex justify-center   mx-auto '>
-        <ul className='text-neutral-600 capitalize flex gap-15 text-[15px]'>
+        <ul className='text-neutral-600 capitalize flex gap-15 text-[13px] sm:text-[14px] md:text-[15px]'>
           <li className='hover:text-yellow-600'>
             <Link href={'/'}>
               Home
