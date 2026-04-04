@@ -7,19 +7,26 @@ import Support from "./components/home/Support.jsx";
 import Tabing from "./components/home/Tabing.jsx";
 import TrandingColaction from "./components/home/TrandingColaction.jsx";
 import Testimonial from "./comon/Testimonial.jsx"
+import { Sliderdata } from "./services/HomeService.js";
+import { Productdata } from "./services/ProductServices.js";
 
 
 
 
 
-export default function Home() {
+export default async function Home() {
+
+
+  let productdata=await Productdata()
+  let data=await Sliderdata()
+ 
   return (
     <>
 
-<BannerSection/>
+<BannerSection sliderdata={data} />
 
 <OfferSection/>
-<Tabing/>
+<Tabing Productdata={productdata} />
 
 <TrandingColaction/>
 <Bestselling/>

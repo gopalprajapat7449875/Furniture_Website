@@ -7,13 +7,22 @@ import { FaCartShopping } from "react-icons/fa6";
 import { IoSearchSharp } from "react-icons/io5";
 import { RiMenuFoldLine } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
+import { useDispatch, useSelector } from 'react-redux';
+import { logOut } from '../reduxwork/UserSlice';
+import { redirect } from 'next/navigation';
 
 
 export default function Header() {
-
+  let token = useSelector((state) => state.userStore.token)
   const [scrolled, setScrolled] = useState(false);
   const [open, setopen] = useState(false);
 
+let logout=useDispatch()
+
+  let HendelLogout=()=>{
+ logout(logOut())
+       redirect('/')
+  }
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
       if (window.scrollY >= 125) {
@@ -40,11 +49,16 @@ export default function Header() {
                 <a href="furnitureinfo@gmailcom">furnitureinfo@gmail.com</a>
               </p>
 
-              <p
+
+              {token ? <div className='flex gap-2 '><button onClick={HendelLogout} className=  'font-serif rounded px-1 border-2 border-yellow-600 hover:text-yellow-600'> Logout </button> <Link href={'/login-user'}>  <button className=  'font-serif rounded px-1 border-2 border-yellow-600 hover:text-yellow-600'> Dashboard </button> </Link> </div> : <p
                 className=' hover:text-yellow-600  duration-250 '
               >
                 <Link href={'/checkout'}>  Login / Register</Link>
               </p>
+              }
+
+
+
 
             </div>
           </div>

@@ -1,8 +1,10 @@
+'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { GrFormNext } from 'react-icons/gr'
 
-export default function DetailHeading() {
+export default function DetailHeading({ProductDetails}) {
+    const [data, setdata] = useState(ProductDetails.productres)
     return (
         <>
             <div className=" max-w-[1200px] mx-auto  text-center ">
@@ -21,7 +23,7 @@ export default function DetailHeading() {
                         </span>
 
                         <span className='flex items-center
-                            text-yellow-600 gap-1'> <GrFormNext />Hrithvik Stool </span>
+                            text-yellow-600 gap-1'> <GrFormNext />{data?._ProductName} </span>
                     </p>
                 </div>
 

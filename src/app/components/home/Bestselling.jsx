@@ -13,6 +13,7 @@ export default function Bestselling() {
 
   var settings = {
     autoplay: true,
+    arrows:false,
     autoplaySpeed: 2500,
     pauseOnHover: true,
     infinite: true,

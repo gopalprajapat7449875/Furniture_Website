@@ -54,3 +54,22 @@
 .animate-slideUp {
   animation: slideUp 0.8s ease-in-out;
 }
+.slick-prev, 
+.slick-next {
+  width: 20px;
+  height: 20px;
+  background: black !important;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute !important; */
+  z-index: 10;
+}
+.slick-next{
+  margin-left: -10px !important;
+}
+.slick-prev:hover, 
+.slick-next:hover {
+  background: blue !important;
+}
